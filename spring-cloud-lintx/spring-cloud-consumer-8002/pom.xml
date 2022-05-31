@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>spring-cloud-lintx</artifactId>
+        <groupId>org.example</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>spring-cloud-consumer-8002</artifactId>
+
+    <properties>
+        <maven.compiler.source>8</maven.compiler.source>
+        <maven.compiler.target>8</maven.compiler.target>
+    </properties>
+
+    <dependencies>
+
+        <!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-dependencies -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-dependencies</artifactId>
+            <version>2.5.3</version>
+            <type>pom</type>
+            <scope>import</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+            <version>RELEASE</version>
+        </dependency>
+        <dependency>
+            <groupId>org.example</groupId>
+            <artifactId>spring-cloud-proder-8001</artifactId>
+            <version>1.0-SNAPSHOT</version>
+            <scope>compile</scope>
+        </dependency>
+
+
+        <!-- https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-dependencies -->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-dependencies</artifactId>
+            <version>Greenwich.SR6</version>
+            <type>pom</type>
+            <scope>import</scope>
+        </dependency>
+
+
+        <!-- https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-starter-eureka -->
+        <dependency>
+            <groupId>org.yaml</groupId>
+            <artifactId>snakeyaml</artifactId>
+            <version>1.29</version>
+        </dependency>
+
+
+        <dependency>
+            <groupId>org.example</groupId>
+            <artifactId>spring-cloud-api</artifactId>
+            <version>1.0-SNAPSHOT</version>
+            <scope>compile</scope>
+        </dependency>
+    </dependencies>
+
+</project>
